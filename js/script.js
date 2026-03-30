@@ -27,7 +27,6 @@ async function getTrendingGifs() {
 function displayGifs(gifs) {
   const gifContainer = document.getElementById('gif-container'); // Assume you have a div with this ID
   gifs.forEach(gif => {
-    // For each gif, get the direct link to the image
     const gifUrl = gif.images.original.url;
 
     // Create an image element and set its source
@@ -39,6 +38,3 @@ function displayGifs(gifs) {
     gifContainer.appendChild(imgElement);
   });
 }
-
-// Call the function to initiate the fetch operation
-getTrendingGifs();
