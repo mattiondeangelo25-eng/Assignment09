@@ -5,7 +5,6 @@ const url = `https://api.giphy.com/v1/stickers/search?api_key=${apiKey}&q=frogs&
 
 async function getTrendingGifs() {
   try {
-    // Await the response from the fetch request
     const response = await fetch(url);
 
     // Check if the request was successful
